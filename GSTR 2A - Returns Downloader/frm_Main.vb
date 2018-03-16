@@ -58,12 +58,16 @@ Public Class frm_Main
         Me.txt_DestPath.Enabled = True
     End Sub
     Private Sub btn_Start_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Start.Click
-        DisableControls()
-        Me.Location = New Point(My.Computer.Screen.WorkingArea.Width - Me.Width, My.Computer.Screen.WorkingArea.Height - Me.Height)
-        LoginWorker.RunWorkerAsync()
-        StoreDir = txt_DestPath.EditValue
-        If My.Computer.FileSystem.DirectoryExists(StoreDir) = False Then
-            My.Computer.FileSystem.CreateDirectory(StoreDir)
+        If txt_DestPath.EditValue = "" Then
+            MsgBox("Kindly select path for storing downloaded files to Start the process", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Error")
+        Else
+            DisableControls()
+            Me.Location = New Point(My.Computer.Screen.WorkingArea.Width - Me.Width, My.Computer.Screen.WorkingArea.Height - Me.Height)
+            LoginWorker.RunWorkerAsync()
+            StoreDir = txt_DestPath.EditValue
+            If My.Computer.FileSystem.DirectoryExists(StoreDir) = False Then
+                My.Computer.FileSystem.CreateDirectory(StoreDir)
+            End If
         End If
     End Sub
     Sub StartDriver()
