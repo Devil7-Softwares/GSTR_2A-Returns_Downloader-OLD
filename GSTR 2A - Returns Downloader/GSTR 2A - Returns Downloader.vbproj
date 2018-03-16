@@ -60,10 +60,10 @@
     <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Downloads\newtonsoft.json.11.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\dll\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Selenium.WebDriverBackedSelenium">
-      <HintPath>..\..\..\Downloads\selenium-dotnet-3.9.1\Selenium.WebDriverBackedSelenium.dll</HintPath>
+      <HintPath>..\dll\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -75,10 +75,10 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="WebDriver">
-      <HintPath>..\..\..\Downloads\selenium-dotnet-3.9.1\WebDriver.dll</HintPath>
+      <HintPath>..\dll\WebDriver.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver.Support">
-      <HintPath>..\..\..\Downloads\selenium-dotnet-3.9.1\WebDriver.Support.dll</HintPath>
+      <HintPath>..\dll\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
